@@ -1,0 +1,46 @@
+@import url(__color.scss);
+@import url(Header.scss);
+@import url(Content.scss);
+@import url(Footer.scss);
+@import url(Toggle.scss);
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../Fonts/eot/IRANYekanWebRegular.eot");
+  src: url("../Fonts/eot/IRANYekanWebRegular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */ url("../Fonts/woff/IRANYekanWebRegular.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url("../Fonts/woff2/IRANYekanWebRegular.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("../Fonts/ttf/IRANYekanWebRegular.ttf")
+      format("truetype");
+}
+
+*,
+*::after,
+*::before,
+body {
+  font-family: "iranyekan" !important ;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--font);
+  transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 99vw;
+  height: 99vh;
+  margin: 0 auto;
+}

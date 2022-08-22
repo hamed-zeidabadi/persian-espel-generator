@@ -1,0 +1,29 @@
+#footer {
+  width: 99%;
+  height: 10%;
+  direction: rtl !important;
+
+  .copyright {
+    height: 30px;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px auto 0 auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    p {
+      color: var(--font);
+    }
+    a {
+      color: var(--font);
+      text-decoration: none;
+    }
+    span {
+      color: #d61c4e;
+      font-size: 1.5rem;
+      padding: 2px;
+    }
+  }
+}
